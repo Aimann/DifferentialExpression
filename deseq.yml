@@ -1,0 +1,9 @@
+name: deseq2
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python
+  - snakemake-minimal
+  - r-base=4.3.*
+  
