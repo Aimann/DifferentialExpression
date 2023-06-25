@@ -28,24 +28,24 @@ samples.txt (for 'Wald' and 'LRT')
 
 |  | condition | sample |
 | --------------- | --------------- | --------------- |
-| sample_A_1 | condition1 | sample_A_1
-| sample_A_2 | condition1 | sample_A_2
-| sample_A_1 | condition1 | sample_A_1
-| sample_A_2 | condition1 | sample_A_2
-| sample_B_1 | condition2 | sample_B_1
-| sample_B_2 | condition2 | sample_B_2
-| sample_B_1 | condition2 | sample_B_1
-| sample_B_2 | condition2 | sample_B_2
+| sample_A_1 | condition1 | sample_A_1 |
+| sample_A_2 | condition1 | sample_A_2 |
+| sample_A_1 | condition1 | sample_A_1 |
+| sample_A_2 | condition1 | sample_A_2 |
+| sample_B_1 | condition2 | sample_B_1 |
+| sample_B_2 | condition2 | sample_B_2 |
+| sample_B_1 | condition2 | sample_B_1 |
+| sample_B_2 | condition2 | sample_B_2 |
 
 samples.txt (for 'RIP')
 
 |  | condition | assay | sample |
 | --------------- | --------------- | --------------- |
-| sample_A_1 | condition1 | Input | sample_A_1
-| sample_A_2 | condition1 | Input | sample_A_2
-| sample_A_1 | condition1 | IP | sample_A_1
-| sample_A_2 | condition1 | IP | sample_A_2
-| sample_B_1 | condition2 | Input | sample_B_1
-| sample_B_2 | condition2 | Input | sample_B_2
-| sample_B_1 | condition2 | IP | sample_B_1
-| sample_B_2 | condition2 | IP | sample_B_2
+| sample_A_1 | condition1 | Input | sample_A_1 |
+| sample_A_2 | condition1 | Input | sample_A_2 |
+| sample_A_1 | condition1 | IP | sample_A_1 |
+| sample_A_2 | condition1 | IP | sample_A_2 |
+| sample_B_1 | condition2 | Input | sample_B_1 |
+| sample_B_2 | condition2 | Input | sample_B_2 |
+| sample_B_1 | condition2 | IP | sample_B_1 |
+| sample_B_2 | condition2 | IP | sample_B_2 |
