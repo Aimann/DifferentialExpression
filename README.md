@@ -39,7 +39,7 @@ samples.txt (for 'Wald' and 'LRT')
 
 samples.txt (for 'RIP')
 
-|  | condition | IP |sample |
+|  | condition | assay |sample |
 | --------------- | --------------- | --------------- | --------------- |
 | sample_A_1 | condition1 | Input | sample_A_1 |
 | sample_A_2 | condition1 | Input | sample_A_2 |
