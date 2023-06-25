@@ -39,8 +39,8 @@ samples.txt (for 'Wald' and 'LRT')
 
 samples.txt (for 'RIP')
 
-|  | condition | sample |
-| --------------- | --------------- | --------------- |
+|  | condition | IP |sample |
+| --------------- | --------------- | --------------- | --------------- |
 | sample_A_1 | condition1 | Input | sample_A_1 |
 | sample_A_2 | condition1 | Input | sample_A_2 |
 | sample_A_1 | condition1 | IP | sample_A_1 |
