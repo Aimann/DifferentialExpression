@@ -11,11 +11,14 @@ counts = "counts.txt"
 samples = "samples.txt"
 
 ## Type of test to perform in DESeq2; Wald test, Likelihood ratio test (LRT), or IP/Input enrichment test (RIP)
-analysis_type = "LRT"
+analysis_type = "Wald"
+
+## Prefix for output files
+output_prefix = "output"
 
 rule all:
     input:
-        "sizeFactors.txt",
+        dynamic("{output_prefix}/sizeFactors.txt"),
         # "clusters.txt"
 ## Run DESeq2
 rule run_deseq2:
@@ -23,19 +26,19 @@ rule run_deseq2:
         counts=counts,
         samples=samples
     output:
-        "sizeFactors.txt"
+        dynamic("{output_prefix}/sizeFactors.txt")
     run:
         if analysis_type == "Wald":
             shell(
-                "Rscript scripts/deseq.R {input.counts} {input.samples}"
+                "Rscript scripts/deseq.R {input.counts} {input.samples} {output_prefix}"
             )
         elif analysis_type == "LRT":
             shell(
-                "Rscript scripts/deseqLRT.R {input.counts} {input.samples}"
+                "Rscript scripts/deseqLRT.R {input.counts} {input.samples} {output_prefix}"
             )
         elif analysis_type == "RIP":
             shell(
-                "Rscript scripts/deseqRIP.R {input.counts} {input.samples}"
+                "Rscript scripts/deseqRIP.R {input.counts} {input.samples} {output_prefix}"
             )
         else:
             raise ValueError("analysis_type must be Wald, LRT, or RIP")
