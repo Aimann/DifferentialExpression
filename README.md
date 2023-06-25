@@ -16,6 +16,13 @@ conda env create -f deseq.yml
 
 counts.txt
 
+|  | sample_1 | sample_2 |  sample_3 | sample_4 |
+| --------------- | --------------- | --------------- | --------------- | --------------- |
+| GENE_A | ## | ## | ## | ## |
+| GENE_B | ## | ## | ## | ## |
+| GENE_C | ## | ## | ## | ## |
+| GENE_D | ## | ## | ## | ## |
+
 ```tsv
     sample_1    sample_2    sample_3    ... sample_n
 GENE_A 15   6   12  ... 15
@@ -30,12 +37,9 @@ samples.txt (for 'Wald' and 'LRT')
 | --------------- | --------------- | --------------- |
 | sample_A_1 | condition1 | sample_A_1 |
 | sample_A_2 | condition1 | sample_A_2 |
-| sample_A_1 | condition1 | sample_A_1 |
-| sample_A_2 | condition1 | sample_A_2 |
 | sample_B_1 | condition2 | sample_B_1 |
 | sample_B_2 | condition2 | sample_B_2 |
-| sample_B_1 | condition2 | sample_B_1 |
-| sample_B_2 | condition2 | sample_B_2 |
+
 
 samples.txt (for 'RIP')
 
