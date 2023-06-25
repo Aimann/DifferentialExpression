@@ -26,29 +26,26 @@ GENE_D 24   25   21  ... 35
 
 samples.txt (for 'Wald' and 'LRT')
 
-```tsv
-    condition   sample
-sample_A_1  condition1 sample_A_1
-sample_A_2  condition1 sample_A_2
-sample_B_1  condition2 sample_B_1
-sample_B_2  condition2 sample_B_2
-```
+|  | condition | sample |
+| --------------- | --------------- | --------------- |
+| sample_A_1 | condition1 | sample_A_1
+| sample_A_2 | condition1 | sample_A_2
+| sample_A_1 | condition1 | sample_A_1
+| sample_A_2 | condition1 | sample_A_2
+| sample_B_1 | condition2 | sample_B_1
+| sample_B_2 | condition2 | sample_B_2
+| sample_B_1 | condition2 | sample_B_1
+| sample_B_2 | condition2 | sample_B_2
 
 samples.txt (for 'RIP')
 
-```tsv
-    condition   assay   sample
-sample_A_1  condition1  Input sample_A_1_Input
-sample_A_2  condition1  Input sample_A_2_Input
-sample_A_1  condition1  IP sample_A_1_IP
-sample_A_2  condition1  IP sample_A_2_IP
-sample_B_1  condition2  Input   sample_B_1_Input
-sample_B_2  condition2  Input   sample_B_2_Input
-sample_B_1  condition2  IP  sample_B_1_IP
-sample_B_2  condition2  IP  sample_B_2_IP
-```
-| Column 1 Header | Column 2 Header | Column 3 Header |
+|  | condition | assay | sample |
 | --------------- | --------------- | --------------- |
-| Row 1 Column 1 | Row 1 Column 2 | Row 1 Column 3 |
-| Row 2 Column 1 | Row 2 Column 2 | Row 2 Column 3 |
-| Row 3 Column 1 | Row 3 Column 2 | Row 3 Column 3 |
+| sample_A_1 | condition1 | Input | sample_A_1
+| sample_A_2 | condition1 | Input | sample_A_2
+| sample_A_1 | condition1 | IP | sample_A_1
+| sample_A_2 | condition1 | IP | sample_A_2
+| sample_B_1 | condition2 | Input | sample_B_1
+| sample_B_2 | condition2 | Input | sample_B_2
+| sample_B_1 | condition2 | IP | sample_B_1
+| sample_B_2 | condition2 | IP | sample_B_2
