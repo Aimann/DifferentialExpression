@@ -16,13 +16,12 @@ conda env create -f deseq.yml
 
 counts.txt
 
-```tsv
-    sample_1    sample_2    sample_3    ... sample_n
-GENE_A 15   6   12  ... 15
-GENE_B 32   21   17  ... 15
-GENE_C 37   43   20  ... 5
-GENE_D 24   25   21  ... 35
-```
+|  | sample_A_1 | sample_A_2 |  sample_B_1 | sample_B_2 |
+| --------------- | --------------- | --------------- | --------------- | --------------- |
+| GENE_A | ## | ## | ## | ## |
+| GENE_B | ## | ## | ## | ## |
+| GENE_C | ## | ## | ## | ## |
+| GENE_D | ## | ## | ## | ## |
 
 samples.txt (for 'Wald' and 'LRT')
 
@@ -30,17 +29,14 @@ samples.txt (for 'Wald' and 'LRT')
 | --------------- | --------------- | --------------- |
 | sample_A_1 | condition1 | sample_A_1 |
 | sample_A_2 | condition1 | sample_A_2 |
-| sample_A_1 | condition1 | sample_A_1 |
-| sample_A_2 | condition1 | sample_A_2 |
 | sample_B_1 | condition2 | sample_B_1 |
 | sample_B_2 | condition2 | sample_B_2 |
-| sample_B_1 | condition2 | sample_B_1 |
-| sample_B_2 | condition2 | sample_B_2 |
+
 
 samples.txt (for 'RIP')
 
-|  | condition | assay | sample |
-| --------------- | --------------- | --------------- |
+|  | condition | assay |sample |
+| --------------- | --------------- | --------------- | --------------- |
 | sample_A_1 | condition1 | Input | sample_A_1 |
 | sample_A_2 | condition1 | Input | sample_A_2 |
 | sample_A_1 | condition1 | IP | sample_A_1 |
