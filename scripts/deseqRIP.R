@@ -41,13 +41,13 @@ dds <- DESeq(dds, test="LRT", reduced= ~ assay + condition)
 
 ## Extract the size factors
 sizeFactors <- sizeFactors(dds)
-write.table(sizeFactors, file="sizeFactors.txt", sep="\t", quote=F, col.names='sizeFactor', row.names=T)
+write.table(sizeFactors, file=paste0(output_prefix,"/","sizeFactors.txt"), sep="\t", quote=F, col.names='sizeFactor', row.names=T)
 
 ## Adds the normalized counts to the results table
 res <- results(dds)
 res <- cbind(res, as.data.frame(counts(dds, normalized=TRUE)))
 res <- res[order(res$padj), ]
-write.table(res, file=paste0("deseq_results_LRT_enrichment.txt"), sep="\t", quote=F, col.names=NA, row.names=T)
+write.table(res, file=paste0(output_prefix,"/","deseq_results_LRT_enrichment.txt"), sep="\t", quote=F, col.names=NA, row.names=T)
 
 vsd <- vst(dds, blind=FALSE)
 plotPCA(vsd, intgroup=c("condition"))
