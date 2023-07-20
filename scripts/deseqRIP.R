@@ -27,13 +27,14 @@ workdir <- getwd()
 setwd(workdir)
 
 # Read count data from file
-countData <- read.table(counts_file, header = TRUE, row.names = 1, sep = "\t")
+countdata <- read.table(counts_file, header = TRUE, row.names = 1, sep = "\t")
+countdata <- as.matrix(countdata)
 
 # Read sample metadata from file
 metadata <- read.table(samples_file, header = TRUE, row.names = 1, sep = "\t")
 
 # Create a DESeqDataSet object
-dds <- DESeqDataSet(dds, colData = metadata, design= ~ assay + condition + assay:condition)
+dds <- DESeqDataSetFromMatrix(countData=countdata, colData = metadata, design= ~ assay + condition + assay:condition)
 
 # Perform differential expression analysis
 print("Performing LRT test using IP/Input design...")
